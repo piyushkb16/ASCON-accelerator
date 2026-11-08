@@ -1,0 +1,9 @@
+Icarus Verilog 12.0; top tb_ascon; command: make test
+PASS: 7332 round vectors, 1222 permutation vectors, 1227 completed transactions, 71341 checks
+PASS: exact p8/p12 latency, back-to-back acceptance, ignored busy starts, captured inputs, held start, reset abort/recovery, done pulse, output retention
+tb/tb_ascon.sv:303: $finish called at 142866000 (1ps)
+
+Command: make check-vectors
+python3 scripts/gen_vectors.py --check
+PASS: 7332 round vectors match pinned upstream C
+PASS: 1222 permutation vectors match pinned upstream C
